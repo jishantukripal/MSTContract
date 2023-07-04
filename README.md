@@ -38,7 +38,7 @@ Once the code is compiled, you can deploy the contract by clicking on the "Deplo
 Once the contract is deployed, you can interact with it by calling the various function. 
 
 <br>
-**License**
+License
 
 ***
 
