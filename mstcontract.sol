@@ -12,21 +12,19 @@ contract MyToken {
     constructor() {
         name = "Metacraft Solidity Token";
         symbol = "MST";
-        totalSupply = 21000 * 10**18;            // Total supply of 21 million coins with 18 decimal places
+        totalSupply = 21000 ;            // Total supply of 21000 
         balances[msg.sender] = totalSupply;         // Assign the total supply to the contract deployer's balance
     }
 
     // Mint function
     function mint(address recipient, uint256 value) public {
-        totalSupply += value;                        // Increase the total supply by the specified value
+        totalSupply -= value;                        // Increase the total supply by the specified value
         balances[recipient] += value;                 // Increase the balance of the recipient by the specified value
     }
 
     // Burn function
     function burn(address sender, uint256 value) public {
         require(balances[sender] >= value, "Insufficient balance"); // Check if the sender has enough balance
-
-        totalSupply -= value;                        // Decrease the total supply by the specified value
         balances[sender] -= value;                    // Decrease the balance of the sender by the specified value
     }
 }
