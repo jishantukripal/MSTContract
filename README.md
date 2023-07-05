@@ -39,7 +39,7 @@ Once the contract is deployed, you can interact with it by calling the various f
 
 **Explanation Video**
 <br>
-Link: 
+Link: https://www.loom.com/share/2b96d4fa6ca54f6fa91b0c69fb7d849f?sid=c89cd306-79dd-4d1b-8e41-4cdd9a0e537b
 <br>
 
 <br>
